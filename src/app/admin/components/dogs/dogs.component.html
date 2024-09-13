@@ -1,0 +1,22 @@
+<div>
+  <h2>Dog image</h2>
+  <img [src]="dogImageUrl" alt="Dog image" />
+</div>
+
+<section>
+  <div class="example-button-row">
+    <button mat-raised-button color="warn" (click)="loadNewDogImage()">
+      Get new image
+    </button>
+  </div>
+</section>
+
+<div>
+  <mat-form-field class="example-full-width">
+    <textarea matInput placeholder="Text" [(ngModel)]="userInput"></textarea>
+  </mat-form-field>
+
+  <div appWhiteSpaceDirective>
+    {{ userInput }}
+  </div>
+</div>
