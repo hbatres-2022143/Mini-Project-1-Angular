@@ -3,14 +3,14 @@ import {
   ElementRef,
   Renderer2,
   OnChanges,
-  Input,
+  Input
 } from '@angular/core';
 
 @Directive({
-  selector: '[appWhiteSpace]',
+  selector: '[appWhiteSpace]'
 })
 export class WhiteSpaceDirective implements OnChanges {
-  @Input() appWhiteSpace: string = '';
+  @Input() appWhiteSpace = '';
 
   constructor(private elementRef: ElementRef, private renderer: Renderer2) {}
 

@@ -4,11 +4,11 @@ import { DogsServiceService } from '../../services/dogs-service.service';
 @Component({
   selector: 'app-dogs',
   templateUrl: './dogs.component.html',
-  styleUrls: ['./dogs.component.css'],
+  styleUrls: ['./dogs.component.css']
 })
 export class DogsComponent implements OnInit {
-  dogImageUrl: string = '';
-  userInput: string = '';
+  dogImageUrl = '';
+  userInput = '';
 
   constructor(private dogsService: DogsServiceService) {}
 
@@ -18,12 +18,12 @@ export class DogsComponent implements OnInit {
 
   loadNewDogImage(): void {
     this.dogsService.getDogImage().subscribe({
-      next: (data) => {
+      next: data => {
         this.dogImageUrl = data.message;
       },
-      error: (error) => {
+      error: error => {
         console.error('Error getting image', error);
-      },
+      }
     });
   }
 }
