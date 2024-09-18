@@ -8,10 +8,4 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'proyecto1_is4tech';
-
-  constructor(private router: Router) {}
-
-  navigateToDogs() {
-    this.router.navigate(['/dogs']);
-  }
 }

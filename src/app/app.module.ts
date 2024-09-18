@@ -1,5 +1,5 @@
 import { MatInputModule } from '@angular/material/input';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -23,7 +23,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CommonModule
   ],
   providers: [],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
+import { DogsComponent } from './components/dogs/dogs.component';
 
-import { AdminRoutingModule } from './admin-routing.module';
+const routes: Routes = [
+  { path: '',title: 'Dogs', component: DogsComponent } 
+];
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule, AdminRoutingModule, FormsModule, HttpClientModule]
+  imports: [CommonModule, RouterModule.forChild(routes) ]
 })
 export class AdminModule {}
