@@ -6,8 +6,8 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  padding: 40px;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  padding: 40px 40px 0;
 }
 
 .example-button-row .mat-mdc-button-base {

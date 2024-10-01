@@ -1,0 +1,73 @@
+::ng-deep .custom-dialog-container {
+  border-radius: 20px;
+  width: 300px;
+  overflow: hidden;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.dialog-title {
+  color: #060525;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding: 30px 40px 0;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0;
+}
+
+.icon {
+  color: #060525;
+  margin-right: 15px;
+  font-size: 24px;
+}
+
+.audit-section {
+  padding: 0 55px;
+}
+
+.section-title {
+  color: #060525;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.section-title2 {
+  color: #060525;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+
+.info-text {
+  font-size: 16px;
+  color: gray;
+}
+
+.highlight {
+  color: #060525;
+  font-weight: 500;
+}
+
+.dialog-actions {
+  justify-content: center;
+  padding: 30px 45px;
+}
+
+.close-button {
+  background-color: #060525;
+  color: white;
+  border-radius: 15px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 400;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}

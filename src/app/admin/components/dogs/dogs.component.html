@@ -16,7 +16,9 @@
     <textarea matInput placeholder="Text" [(ngModel)]="userInput"></textarea>
   </mat-form-field>
 
-  <div appWhiteSpaceDirective>
+  <div [appWhiteSpace]="userInput">
     {{ userInput }}
   </div>
 </div>
+
+<button button mat-raised-button color="primary" (click)="openDialog()">Abrir Diálogo</button>
